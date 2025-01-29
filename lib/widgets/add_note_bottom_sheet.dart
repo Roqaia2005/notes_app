@@ -35,27 +35,28 @@ class _AddNoteFormState extends State<AddNoteForm> {
       key: formKey,
       autovalidateMode: autovalidateMode,
       child: Column(
-        children: [
-          SizedBox(
+        children:[
+          const SizedBox(
             height: 30,
           ),
-          customTextField(
+          CustomTextField(
+          
             onSaved: (value) {
               title = value;
             },
             hint: "Title",
           ),
-          SizedBox(
+          const SizedBox(
             height: 16,
           ),
-          customTextField(
+          CustomTextField(
             onSaved: (value) {
               subtitle = value;
             },
             hint: "Content",
             maxLines: 5,
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
           CustomButton(
